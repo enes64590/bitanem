@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#ffb6c1,#ffd1dc,#fff0f5);
+    overflow-x:hidden;
+    color:#fff;
+}
+
+/* Kalpler */
+#hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+    z-index:-1;
+}
+
+/* Giriş */
+#login-screen{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:90%;
+    max-width:500px;
+    padding:40px;
+    border-radius:25px;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.3);
+    text-align:center;
+    box-shadow:0 10px 40px rgba(0,0,0,.2);
+}
+
+.login-box h1{
+    margin-bottom:20px;
+}
+
+.login-box input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    margin:20px 0;
+    font-size:16px;
+}
+
+.login-box button{
+    padding:15px 30px;
+    border:none;
+    border-radius:12px;
+    background:#ff4d88;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.login-box button:hover{
+    transform:scale(1.05);
+}
+
+/* Ana içerik */
+#main-content{
+    display:none;
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-family:'Dancing Script',cursive;
+    text-shadow:0 0 20px rgba(255,255,255,.6);
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:1.2rem;
+}
+
+/* Sayaç */
+.counter-section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.counter{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:40px;
+}
+
+.box{
+    width:140px;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    transition:.4s;
+}
+
+.box:hover{
+    transform:translateY(-10px);
+}
+
+.box span{
+    font-size:2rem;
+    font-weight:bold;
+}
+
+/* Galeri */
+.gallery{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.gallery-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.photo-card{
+    width:260px;
+    background:white;
+    padding:12px;
+    border-radius:15px;
+    color:black;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    transform:rotate(-2deg);
+    transition:.4s;
+}
+
+.photo-card:nth-child(even){
+    transform:rotate(2deg);
+}
+
+.photo-card:hover{
+    transform:scale(1.08) rotate(0);
+}
+
+.photo-card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.photo-card p{
+    margin-top:10px;
+    font-family:'Dancing Script',cursive;
+    font-size:1.4rem;
+}
+
+/* Müzik */
+.music-section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.music-card{
+    margin:auto;
+    max-width:400px;
+    padding:30px;
+    border-radius:25px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+}
+
+.record{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    margin:20px auto;
+    background:
+        radial-gradient(circle,#111 20%,#333 21%,#111 40%,#333 41%,#111 60%);
+    animation:spin 6s linear infinite;
+    animation-play-state:paused;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.music-card button{
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#ff4d88;
+    color:white;
+    cursor:pointer;
+}
+
+/* Mektup */
+.letter-section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.envelope{
+    width:350px;
+    margin:auto;
+    position:relative;
+    cursor:pointer;
+}
+
+.envelope-front{
+    background:#ff6fa5;
+    padding:80px 20px;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+.envelope-front span{
+    font-size:4rem;
+}
+
+.letter{
+    display:none;
+    background:white;
+    color:black;
+    margin-top:20px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    animation:fadeIn .6s;
+}
+
+.letter h3{
+    color:#ff4d88;
+    margin-bottom:15px;
+}
+
+.letter button{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:#ff4d88;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Final */
+.final{
+    min-height:70vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.final h1{
+    font-size:6rem;
+    font-family:'Dancing Script',cursive;
+}
+
+.final h2{
+    margin-top:20px;
+    font-size:2rem;
+}
+
+/* Mobil */
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .counter{
+        gap:10px;
+    }
+
+    .box{
+        width:120px;
+    }
+
+    .envelope{
+        width:90%;
+    }
+
+}

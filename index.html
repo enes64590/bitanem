@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birtanem, İyi Ki Benimsin ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="hearts"></div>
+
+    <!-- Giriş Ekranı -->
+    <section id="login-screen">
+        <div class="login-box">
+            <h1>❤️ Bir Soru Seni Bekliyor ❤️</h1>
+
+            <h3 id="question">
+                İlk tanışma tarihimiz nedir ?
+            </h3>
+
+            <input
+                type="text"
+                id="passwordInput"
+                placeholder="Cevabı Yaz..."
+            >
+
+            <button onclick="checkPassword()">
+                Giriş Yap
+            </button>
+
+            <p id="error"></p>
+        </div>
+    </section>
+
+    <!-- Ana Site -->
+    <main id="main-content">
+
+        <section class="hero">
+            <h1>Birtanem,<br>İyi Ki Benimsin ❤️</h1>
+
+            <p>
+                Hayatıma kattığın her şey için teşekkür ederim.
+            </p>
+        </section>
+
+        <!-- Sayaç -->
+        <section class="counter-section">
+            <h2>❤️ Birlikte Geçen Süre ❤️</h2>
+
+            <div class="counter">
+
+                <div class="box">
+                    <span id="days">0</span>
+                    <p>Gün</p>
+                </div>
+
+                <div class="box">
+                    <span id="hours">0</span>
+                    <p>Saat</p>
+                </div>
+
+                <div class="box">
+                    <span id="minutes">0</span>
+                    <p>Dakika</p>
+                </div>
+
+                <div class="box">
+                    <span id="seconds">0</span>
+                    <p>Saniye</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Galeri -->
+        <section class="gallery">
+
+            <h2>📸 Anılarımız</h2>
+
+            <div class="gallery-grid">
+
+                <div class="photo-card">
+                    <img src="foto1.jpg">
+                    <p>Senin kusur sandığın her bir zerrene eriyip bitiyorum Güzelim</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="foto2.jpg">
+                    <p>Eğer bir yağmur olsaydım yeni düzleştirdiğin saçlarına kıyamazdım</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="foto3.jpg">
+                    <p>Her evrende seni arar seni bulur yine seni severdim Bitanem</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="foto4.jpg">
+                    <p>Taktik falan bilmem ciddiysen sonuna kadar varım Ciddi Misin?</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="foto5.jpg">
+                    <p>Sanki göremeğe değer ne varsa sende toplanmış gibi</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Müzik -->
+        <section class="music-section">
+
+            <h2>🎵 Şarkımız</h2>
+
+            <div class="music-card">
+
+                <div class="record"></div>
+
+                <audio id="audio">
+                    <source src="muzik.mp3" type="audio/mpeg">
+                </audio>
+
+                <button id="playBtn">
+                    ▶ Oynat
+                </button>
+
+                <p>
+                    Kodlarken bu şarkı çalıyordu...
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Mektup -->
+        <section class="letter-section">
+
+            <h2>💌 Sana Bir Mektubum Var</h2>
+
+            <div class="envelope" id="envelope">
+
+                <div class="envelope-front">
+                    <span>💌</span>
+                    <p>Açmak İçin Tıkla</p>
+                </div>
+
+                <div class="letter">
+
+                    <h3>Canımın İçi ❤️</h3>
+
+                    <p>
+                        Bitanem bu mektup sana bu mektubu okuduktan sonra istersen galerinde sakla istersen sitede kalsın ancak senden başka kimse bilmesin bu mektubu okuduktan sonrada bana mektup çok güzel deme ne hissedersin onu hissettir Reyyanım Bitanem biliyorum seni üzüyorum kırıyorum ama seni canımdan çok seviyorum senleyken güvende mutlu ve huzurluyum seni asla kaybetmek istemiyorum her insan hata yapar seven insan kendi içerisinde affeder bu dünki olay için bir özür mayetinde
+                        Ya ben sensiz bir hayat düşünemiyorum gelecekle ilgili hayal kurduğumda seni onun içine dahil etmeden yapamıyorum çok seviyorum seni aslada vazgeçmicem aklıma gelince heyecanlanıyorum kendimi kaptırıyorum ama elimde değil sensiz bir gelecek düşünmek istemiyorum çünkü bu zamana kadar hissetmediğim mükemmelikte güzel hisler hissediyorum ve sana gerçekten sahip olmak istiyorum bu siteyi kodlarken sürekli düşündüm sabaha kadar yaptığım saçmalıkları sabredicem seni istemeye devam edicem
+                        Hem sen kucağımda otururken kod yazmıcaksam neden yaşıyorum bu hayatı :) Seninle birlikte tüm imkansızlıklara rağmen yaşamak istediğim bir ömür var Senden başka hiç kimseyi istemiyorum eğer olaki olmazsada bana yaşattıkların için de teşekkür ederim iyiki benimsin iyiki hayatımdasın inşallah hep birlikte oluruz Seni Çok Seviyorum Hayatımın Anlamı 
+                  
+                    </p>
+
+                    <button id="closeLetter">
+                        Mektubu Kapat
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Final -->
+        <section class="final">
+
+            <h1>∞</h1>
+
+            <h2>
+                Seni Çok Seviyorum ❤️
+            </h2>
+
+            <p>
+                İyi ki hayatımdasın.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
